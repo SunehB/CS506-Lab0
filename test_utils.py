@@ -27,7 +27,7 @@ def test_nearest_neighbor():
     target_vector = np.array([1, 2, 3])
     vectors = np.array([[1,4,6],[3,5,8],[5,2,1]]) #0.991,0.999,0.586
 
-    result = test_nearest_neighbor(target_vector,vectors)
+    result = nearest_neighbor(target_vector,vectors)
     
     expected_index = 1
     
