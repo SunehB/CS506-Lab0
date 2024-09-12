@@ -47,10 +47,10 @@ def nearest_neighbor(target_vector, vectors):
     ### YOUR CODE HERE
     for i in range((vectors.shape[0])):
         similarity =  cosine_similarity(vectors[i],target_vector)
-        if similarity > best_similarity:
-            best_similarity = similarity
-            best_index = i
+        if similarity > closest_sim:
+            closest_sim = similarity
+            closest_index= i
     
-    return best_index
+    return closest_index
        
 
